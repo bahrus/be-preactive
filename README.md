@@ -1,6 +1,6 @@
 # be-preactive (🪥)
 
-*be-preactive* is one of a family of renderers, based on the common enhancement base class [be-render-neutral](https://github.com/bahrus/be-render-neutral).  Other members include [be-alit](https://github.com/bahrus/be-alit).
+*be-preactive* is a custom element enhancement that provides rendering capabilities based on Preact.  It is one of a family of renderers, based on the common enhancement base class [be-render-neutral](https://github.com/bahrus/be-render-neutral).  Other members include [be-alit](https://github.com/bahrus/be-alit).
 
 
 In this case, it builds on Preact's [build-less workflows](https://preactjs.com/guide/v10/no-build-workflows).
