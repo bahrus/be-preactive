@@ -14,6 +14,12 @@
     <script id=pronouns be-preactive-vm='["He", "She", "They", "Other"]'>
         document.currentScript.renderer = (vm, html) => html `${vm.map(i => html`<li>${i}</li>`)}`;
     </script>
+
+  <script>
+    setTimeout(() => {
+        pronouns.beEnhanced['bePreactive'].vm = ["I", "You", "Us", "Them"]
+    }, 2000);
+  </script>
 </ul>
 </body>
 </html>
