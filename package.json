@@ -25,7 +25,19 @@
     "ssi-server": "0.0.1"
   },
   "description": "Same as be-alit, but uses preact instead of lit-html.",
-  "main": "index.js",
+  "main": "be-preactive.js",
+  "module": "be-preactive.js",
+  "exports": {
+    ".": "./be-preactive.js",
+    "./emc.js": "./emc.js",
+    "./be-preactive.js": "./be-preactive.js",
+    "./🎇.js": "./🎇.js"
+  },
+  "files": [
+    "*.js",
+    "./ts-refs/*"
+  ],
+  "types": "./ts-refs/be-alit/types.d.ts",
   "author": "",
   "license": "MIT"
 }

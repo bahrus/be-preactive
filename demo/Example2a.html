@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2a</title>
+    <!-- #include virtual="/imports.html" -->
+</head>
+<body>
+    <patient-chart>
+            <medical-prescriptions onerror="console.log(href)"
+                href="prescriptions.json" 
+                enh-be-kvetching>
+            </medical-prescriptions>
+            <table>
+                <thead>
+                    <th>Prescription</th>
+                    <th>Prescriber</th>
+                    <th>Dosage</th>
+                    <th>Frequency</th>
+                </thead>
+                <tbody>
+                    <script be-preactive-with='~medicalPrescriptions::fetch-complete'>
+                        document.currentScript.renderer = (vm, html) => html`${vm.map(prescription => html`
+                                <tr itemscope=treatment-order >
+                                    <td>${prescription.OrderText}</td>
+                                    <td>
+                                        <button disabled>Order Item</button>
+                                        <div>${prescription.Prescriber}</div>
+                                    </td>
+                                    <td>${prescription.Dosage}</td>
+                                    <td>${prescription.Freq}</td>
+                                </tr>
+                            `)}`
+                    </script>
+                </tbody>
+            </table>
+
+            <be-hive></be-hive>
+            <xtal-element></xtal-element>
+    </patient-chart>
+    
+    <script type=module>
+        import 'be-kvetching/emc.js';
+        import '/emc.js';
+    </script>
+</body>
+</html>
