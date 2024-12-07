@@ -24,7 +24,7 @@
     "be-kvetching": "0.0.4",
     "ssi-server": "0.0.1"
   },
-  "description": "Same as be-alit, but uses preact instead of lit-html.",
+  "description": "be-preactive is a custom element enhancement that provides rendering capabilities based on Preact.",
   "main": "be-preactive.js",
   "module": "be-preactive.js",
   "exports": {
