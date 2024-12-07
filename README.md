@@ -39,7 +39,7 @@ As suggested above, it is seemingly beyond most frameworks's ability to pass val
 ```html
 <patient-chart>
         <medical-prescriptions onerror="console.log(href)"
-            href="prescriptions.json" 
+            href="prescriptions.json?patient=zero" 
             enh-be-kvetching>
         </medical-prescriptions>
         <table>
@@ -52,7 +52,7 @@ As suggested above, it is seemingly beyond most frameworks's ability to pass val
             <tbody>
                 <script be-preactive-with='~medicalPrescriptions::fetch-complete'>
                     document.currentScript.renderer = (vm, html) => html`${vm.map(prescription => html`
-                            <tr itemscope=treatment-order >
+                            <tr itemscope=treatment-order>
                                 <td>${prescription.OrderText}</td>
                                 <td>
                                     <button disabled>Order Item</button>

@@ -37,7 +37,11 @@
     "*.js",
     "./ts-refs/*"
   ],
-  "types": "./ts-refs/be-alit/types.d.ts",
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahrus/be-preactive.git"
+  },
+  "types": "./ts-refs/be-preactive/types.d.ts",
+  "author": "anderson.bruce.b@gmail.com",
   "license": "MIT"
 }
