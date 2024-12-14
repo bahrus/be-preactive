@@ -1,4 +1,4 @@
-# be-preactive (🪥)
+# be-preactive (🪥) [TODO]
 
 *be-preactive* is a custom element enhancement that provides rendering capabilities based on Preact.  It is one of a family of renderers, based on the common enhancement base class [be-render-neutral](https://github.com/bahrus/be-render-neutral).  Other members include [be-alit](https://github.com/bahrus/be-alit).
 
@@ -9,8 +9,8 @@ In this case, it builds on Preact's [build-less workflows](https://preactjs.com/
 
 ```html
 <ul>
-    <script id=pronouns be-preactive-vm='["He", "She", "They", "Other"]'>
-        document.currentScript.renderer = (vm, html) => html `${vm.map(i => html`<li>${i}</li>`)}`;
+    <script nomodule id=pronouns be-preactive-vm='["He", "She", "They", "Other"]'>
+        html `${vm.map(i => html`<li>${i}</li>`)}`;
     </script>
 </ul>
 
@@ -50,8 +50,8 @@ As suggested above, it is seemingly beyond most frameworks's ability to pass val
                 <th>Frequency</th>
             </thead>
             <tbody>
-                <script be-preactive-with='~medicalPrescriptions::fetch-complete'>
-                    document.currentScript.renderer = (vm, html) => html`${vm.map(prescription => html`
+                <script nomodule be-preactive-with='~medicalPrescriptions::fetch-complete'>
+                    html`${vm.map(prescription => html`
                             <tr itemscope=treatment-order>
                                 <td>${prescription.OrderText}</td>
                                 <td>
