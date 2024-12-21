@@ -95,7 +95,7 @@ It is easy to choose alternative names.  This package supports one:
 
 ## Viewing Locally
 
-Any web server that serves static files will do but...
+Any web server that serves static files and supports server-side includes will do but...
 
 1.  Install git.
 2.  Fork/clone this repo.
