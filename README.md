@@ -1,4 +1,7 @@
-# be-preactive (🪥) [TODO]
+# be-preactive (🪥)
+
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/be-preactive)
+[![NPM version](https://badge.fury.io/js/be-preactive.png)](http://badge.fury.io/js/be-preactive)
 
 *be-preactive* is a custom element enhancement that provides rendering capabilities based on Preact.  It is one of a family of renderers, based on the common enhancement base class [be-render-neutral](https://github.com/bahrus/be-render-neutral).  Other members include [be-alit](https://github.com/bahrus/be-alit).
 
