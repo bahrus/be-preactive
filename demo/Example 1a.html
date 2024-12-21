@@ -12,7 +12,7 @@
 <body>
   <ul>
     <script id=pronouns be-preactive-vm='["He", "She", "They", "Other"]'>
-        document.currentScript.renderer = (vm, html) => html `${vm.map(i => html`<li>${i}</li>`)}`;
+        html `${vm.map(i => html`<li>${i}</li>`)}`;
     </script>
 
   <script>
