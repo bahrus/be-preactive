@@ -21,7 +21,7 @@
                 </thead>
                 <tbody>
                     <script be-preactive-with='~medicalPrescriptions::fetch-complete'>
-                        document.currentScript.renderer = (vm, html) => html`${vm.map(prescription => html`
+                        html`${vm.map(prescription => html`
                                 <tr itemscope=treatment-order >
                                     <td>${prescription.OrderText}</td>
                                     <td>
